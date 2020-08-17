@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+body {
+	width: 90%;
+	margin: 70px 5%;
+	padding: 0;
+	font-family: "Futura", sans-serif;
+}
+
+.logo {
+	width: 200px;
+top: -40px;
+left: -120px;
+position: absolute;
+z-index: -100;
+}
+
+#frosting {
+	-webkit-animation: frosting-opacity 2s infinite; /* Safari 4+ */
+	-webkit-transform-origin: 50% 50%;
+}
+
+#sprinkles path {
+	-webkit-animation: sprinkle-spin 1s infinite; /* Safari 4+ */
+	-webkit-transform-origin: 50% 50%;	
+}
+
+@-webkit-keyframes frosting-opacity {
+  0%, 100%   {
+  	opacity: 0;
+  	transform: rotate(0deg);
+  }
+  50% {
+  	opacity: 1;
+  	transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sprinkle-spin {
+  0%, 100%   {
+  	transform: rotate(0deg);
+  }
+  50% {
+  	transform: rotate(360deg);
+  }
+}

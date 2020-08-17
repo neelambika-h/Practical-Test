@@ -1,0 +1,294 @@
+﻿@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fullWidth{
+    width: 100%;
+    background: url(../img/1a.jpg) no-repeat;
+}
+
+.logoHead{
+    background-color: #2A3F54;
+    height: 200px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.logoImg{
+    width: 100px;
+    background-color: #fff;
+border-radius: 64px;
+}
+
+.logForm{
+    top:-75px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+border-radius: 5px;
+box-shadow: 2px 2px 5px;
+/*height:290px;*/
+}
+
+.form-control{
+    width: 325px;
+    height: 40px;
+    margin: 15px auto;
+}
+
+input[type="submit"]{
+    width: 100%;
+margin: 3px;
+background-color: #2A3F54;
+border: 1px solid #2A3F54;
+font-size: 18px;
+border-radius: 5px;
+color: #fefefe;
+}
+input[type="submit"]:hover{
+    color: #fff;
+    background-color: #2A3F68;
+    transition-duration: 0.4s;
+}
+
+.logHead{
+    text-align: center;
+padding: 20px;
+background-color: #f0f0f0;
+box-shadow: 0px 2px 1px #ddd;   
+}
+
+a.logLink{
+    width: 40%;
+    margin: 5px 10%;
+    color: #aaaacf;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+a.logLink:hover{
+    color: #fff;
+    background-color: #aaa;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+
+h3{
+    color: #666;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+    font-weight: 700;
+}
+
+.content{
+    margin: 50px auto -70px auto;  
+}
+
+.content>article{
+     background-color: rgba(200,200,200,0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+/*.container-fluid{
+    background: url(../img/bg.jpg) no-repeat;
+    height:95vh;
+}*/
+
+.navbar
+{
+min-height:150px;
+}
+
+.navbar-inverse {
+    background-color: #2A3F54;
+    box-shadow: 2px 2px 2px #333;
+    border-color: #2A3F54;
+    border-radius:0px;
+}
+
+    .navbar-inverse .navbar-nav > li > a
+    {
+    background-color: rgba(0, 3, 17,0.5);
+    color:#fefefe;
+    }
+
+    .navbar-nav > li {
+    margin-top: 10px;
+}
+
+ul.dropdown-menu > li
+{
+padding:5px 10px;
+text-align:center;
+} 
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+   
+    text-decoration: none;
+    background-color:#000311;
+    color:#fefefe;
+}
+
+.navbar-nav > h2
+{
+   color: #fff;
+padding: 1px 0px;
+font-size: 2.7em;
+margin: 15px 0px 5px 0px;
+
+}
+
+.navbar-nav > h4
+{
+color: #fff;
+padding: 1px 0px;
+margin:0px 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #333;
+    background-color: #fefefe;
+}
+
+footer
+{
+padding-top:10vh;
+}
+
+.pageFoot{
+    background-color: #3a3636;
+    color: #fafafa;
+    padding: 10px 20px;
+}
+
+.headNav > ul {
+list-style-type:none;
+color:#333;
+cursor:pointer;
+}
+
+    .headNav > ul > li {
+    float:right;
+    cursor:pointer;
+    padding:15px;
+    background-color: #efefef;
+margin-top: 5px;
+    }
+        .headNav > ul > li:hover {
+            color:#fff;
+        background-color:#aaa;
+        transition-duration:400ms;
+        }
+
+        .headNav > ul > li > ul {
+        margin-left:-50px;
+        display:none;
+        cursor:pointer;
+        padding-top: 5px;
+        }
+
+        .headNav > ul > li > ul > li {
+        list-style-type:none;
+        cursor:pointer;
+        padding:10px;
+        }
+
+        
+
+
+@media only screen and (max-width:768px) {
+
+    .form-control{
+    width: 225px;
+        height: 40px;}
+    
+    a.logLink{
+    width: 40%;
+    margin: 5px 2%;
+}
+
+    .heading {
+    display:none;
+    }
+    .navbar
+    {
+    min-height:75px;
+    }
+
+     .logoImg
+    {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width:568px){
+    
+    /*input[type="submit"]{
+        width:200px;}*/
+    
+    .form-control{
+    width: 225px;
+        height: 40px;}
+    
+    a.logLink{
+    width: 40%;
+    margin: 5px 2%;
+}
+
+    .heading {
+    display:none;
+    }
+
+    .logForm {
+   top:0px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    height: 290px;
+}
+
+    .navbar
+    {
+    min-height:50px;
+    }
+
+    .logoImg
+    {
+        width: 35px;
+    }
+
+    .navbar-brand
+    {
+    padding:7px;
+    }
+
+    .navbar-nav > li {
+    margin-top: 0px;
+}
+
+    ul.dropdown-menu>li
+    {
+    background-color:#fefefe;
+    color:#333;
+    }
+
+        ul.dropdown-menu > li>a:hover, ul.dropdown-menu > li>a:focus
+        {
+        color:#333;
+        }
+
+    .content > article
+    {
+    margin-top:40px;
+    }
+}
